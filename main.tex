@@ -1,0 +1,91 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+\usepackage{comment}
+
+% 设置页边距
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=20mm,
+    right=20mm,
+    top=20mm,
+    bottom=20mm,
+}
+
+% 页眉页脚
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{于珈尉-21371048}
+\lhead{第一次密码学实验报告}
+\cfoot{\thepage}
+
+% 分级标题格式
+\usepackage{ctex}
+\ctexset{
+  section = {
+    format = \Large\bfseries\heiti %\centering
+  },
+  subsection = {
+    format = \large\bfseries\songti
+  },
+  subsubsection = {
+    format = \bfseries\yahei
+  }
+}
+
+% 伪代码
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+% 以下将伪代码行号后标点改为.
+\usepackage{etoolbox}
+\makeatletter
+\def\alglinenumber#1{\footnotesize#1.}
+\patchcmd{\algocf@linesnumbered}{\footnotesize#1:}{\alglinenumber{#1}}{}{}
+\makeatother
+
+% 图片
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+
+% *********separate**************
+
+\begin{document}
+
+\begin{center}
+    \Huge\textbf{实验报告}
+\end{center}
+
+
+% *********separate**************
+\section{实验目的}
+% 在这里写实验目的
+
+\section{实验环境}
+% 在这里写实验环境
+Windows 10
+\par
+Python 3.10
+
+
+% *********separate**************
+\section{实验内容}
+\input{src/experiment1.tex}
+
+% \experiment{2}
+
+
+% *********separate**************
+\clearpage
+\section{实验收获与思考}
+% 在这里写实验收获与思考
+\input{src/thoughts.tex}
+
+
+\end{document}
+

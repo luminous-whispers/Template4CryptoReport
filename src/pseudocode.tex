@@ -1,0 +1,22 @@
+% 伪代码写在这即可
+% 有一个自动转换程序 使用vimL
+\begin{algorithm}
+\caption{示例伪代码}
+\begin{algorithmic}[1]
+\Require 输入：$x, y$
+\Ensure 输出：$z$
+\Procedure{SampleProcedure}{$x, y$}
+    \State $z \gets x + y$
+    \If{$z > 10$}
+        \State $z \gets z - 10$
+    \EndIf
+    \While{$z < 20$}
+        \State $z \gets z + 1$
+    \EndWhile
+    \For{$i \gets 1$ to $10$}
+        \State $z \gets z - i$
+    \EndFor
+    \State \Return $z$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}

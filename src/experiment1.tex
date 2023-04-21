@@ -1,0 +1,74 @@
+\begin{comment}
+    每个模块已经预留了图片模块，如想使用，须使用如下命名方式  
+    callback-[lab no]
+    test-[lab no]-[pic no], 其中[pic no]用于同节多个图片
+\end{comment}
+
+\newcommand{\labno}{2} % 实验序号，可变变量
+
+\subsection{小实验题目}
+
+
+% ***************************part 1*******************************
+\subsubsection{算法流程 \labno}
+% 在这里写算法流程
+
+% 函数调用图片，密码学报告特色
+\begin{comment}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{pic/callback-\detokenize\expandafter{\labno}-1.png} 
+  \caption{callback for lab \labno}
+  % \label{fig:your_label} % if ref needed
+\end{figure}
+\end{comment}
+
+% 伪代码, 若需要
+\input{src/pseudocode.tex}
+
+
+% ***************************part 2*******************************
+\subsubsection{测试样例}
+% 在这里写测试样例
+
+% 测试样例图片 
+% \begin{comment}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{pic/test-\detokenize\expandafter{\labno}-1.png} 
+  \caption{test for lab \labno}
+  % \label{fig:your_label} 
+\end{figure}
+% \end{comment}
+
+
+% ***************************part 3*******************************
+\subsubsection{讨论与思考}
+% 在这里写讨论与思考
+
+%多张子图：
+\begin{comment}
+\begin{figure}[!htbp]
+    \vspace{-0.5cm}
+    \centering
+    \subfigure[  sub_caption1]{
+        \includegraphics[width=6cm]{.jpg}
+        %\caption{fig1}
+    }
+
+    \quad %注意空行会强制子图换行显示
+    \subfigure[sub_cap2]{
+        \includegraphics[width=6cm]{2.jpg}
+    }
+    \quad
+    \subfigure[sub_cap3]{
+        \includegraphics[width=6cm]{3.jpg}
+    }
+
+    \quad
+    \subfigure[sub_cap4]{
+        \includegraphics[width=6cm]{4.jpg}
+    }
+    \caption{ caption}
+\end{figure}
+\end{comment}
