@@ -13,6 +13,7 @@ draft*.pdf
 *.blg
 *.log
 *.pdf
+*.xdv
 *.synctex.gz
 *.fls
 *.fdb_latexmk
