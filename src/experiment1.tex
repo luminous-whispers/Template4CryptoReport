@@ -4,7 +4,7 @@
     test-[lab no]-[pic no], 其中[pic no]用于同节多个图片
 \end{comment}
 
-\newcommand{\labno}{2} % 实验序号，可变变量
+\newcommand{\labno}{1} % 实验序号，可变变量. 第一次使用new，第二次用renew
 
 \subsection{小实验题目}
 
@@ -14,14 +14,14 @@
 % 在这里写算法流程
 
 % 函数调用图片，密码学报告特色
-\begin{comment}
+% \begin{comment}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth]{pic/callback-\detokenize\expandafter{\labno}-1.png} 
+  \includegraphics[width=0.4\textwidth]{pic/callback-\detokenize\expandafter{\labno}.png} 
   \caption{callback for lab \labno}
   % \label{fig:your_label} % if ref needed
 \end{figure}
-\end{comment}
+% \end{comment}
 
 % 伪代码, 若需要
 \input{src/pseudocode.tex}
@@ -35,7 +35,7 @@
 % \begin{comment}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.5\textwidth]{pic/test-\detokenize\expandafter{\labno}-1.png} 
+  \includegraphics[width=0.4\textwidth]{pic/test-\detokenize\expandafter{\labno}.png} 
   \caption{test for lab \labno}
   % \label{fig:your_label} 
 \end{figure}

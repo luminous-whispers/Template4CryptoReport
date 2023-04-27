@@ -12,6 +12,7 @@ draft*.pdf
 *.bbl
 *.blg
 *.log
+*.pdf
 *.synctex.gz
 *.fls
 *.fdb_latexmk

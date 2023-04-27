@@ -4,10 +4,11 @@
 \usepackage{lipsum}
 \usepackage{enumitem}
 \usepackage{amsmath}
-
-\usepackage{comment}
+\usepackage{comment} % 注释
 
 % 设置页边距
+\setlength{\headheight}{13.06885pt}
+\addtolength{\topmargin}{-0.42162pt}
 \usepackage{geometry}
 \geometry{
     a4paper,
@@ -20,21 +21,40 @@
 % 页眉页脚
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{于珈尉-21371048}
+\rhead{姓名-学号}
 \lhead{第一次密码学实验报告}
 \cfoot{\thepage}
 
+% 设置段落
+\usepackage{setspace} % 导入 setspace 宏包
+% \onehalfspacing % 将行距设置为 1.5 倍
+\doublespacing % 将行距设置为 2 倍
+\setlength{\parindent}{2em} %设置首行缩进为2个字符
+\setlength{\parskip}{0.5em} %设置段落间距为0.5个字符
+
+% 添加一些好看的开源字体
+\usepackage{fontspec} 
+\setmainfont[Path=font/,
+BoldFont = JetBrainsMono-Bold.ttf,
+ItalicFont = JetBrainsMono-Italic.ttf,
+BoldItalicFont = JetBrainsMono-BoldItalic.ttf]{JetBrainsMono-Regular.ttf} 
+% 中文字体，不想用注释掉即可
+\setCJKmainfont[Path=font/,
+BoldFont = LXGWWenKai-Bold.ttf,
+ItalicFont = LXGWWenKai-Light.ttf]{LXGWWenKai-Regular.ttf}
+\newCJKfontfamily\yaheimono[Path=font/]{YaHeiMono.ttf}
+\newCJKfontfamily\sourcehan[Path=font/, BoldFont=SourceHanSansCN-Bold.otf]{SourceHanSansCN-Regular.otf}
+
 % 分级标题格式
-\usepackage{ctex}
 \ctexset{
   section = {
-    format = \Large\bfseries\heiti %\centering
+    format = \Large\bfseries\sourcehan %\centering
   },
   subsection = {
-    format = \large\bfseries\songti
+    format = \large\bfseries\sourcehan
   },
   subsubsection = {
-    format = \bfseries\yahei
+    format = \bfseries\yaheimono
   }
 }
 
@@ -53,21 +73,23 @@
 \usepackage{caption}
 \usepackage{float}
 
-% *********separate**************
 
 \begin{document}
+% *********separate**************
+
 
 \begin{center}
-    \Huge\textbf{实验报告}
+    {\sourcehan\Huge\textbf{实验报告}}
 \end{center}
 
 
 % *********separate**************
 \section{实验目的}
-% 在这里写实验目的
+密码学形式主义调研报告
+
 
 \section{实验环境}
-% 在这里写实验环境
+
 Windows 10
 \par
 Python 3.10
@@ -75,17 +97,24 @@ Python 3.10
 
 % *********separate**************
 \section{实验内容}
-\input{src/experiment1.tex}
+% 这是字体测试
+你好，这里是密码学实验报告模板
 
-% \experiment{2}
+hello, this is a report template for cryptography lab
 
+math test $x^2$
+
+
+% 导入各个实验tex文件
+\input{src/experiment1.tex} 
 
 % *********separate**************
 \clearpage
 \section{实验收获与思考}
-% 在这里写实验收获与思考
-\input{src/thoughts.tex}
+\subsection{收获}
+写报告真的让我学会蛮多！！
 
+\input{src/thoughts.tex}
 
 \end{document}
 
