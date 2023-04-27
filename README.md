@@ -6,14 +6,10 @@
 
 ### Latex文件夹结构
 
-demo
-
-./fonts: 放导入的字体
-
-./pic: 放图片，推荐命名为callback-[lab no].png（调用图）、test-[lab no].png（测试样例）
-
-./script: 小脚本
-
+demo  
+./fonts: 放导入的字体  
+./pic: 放图片，推荐命名为callback-[lab no].png（调用图）、test-[lab no].png（测试样例）  
+./script: 小脚本  
 ./src: 放小实验的tex文件、伪代码、思考题
 
 ### 注意事项
