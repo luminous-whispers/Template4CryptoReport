@@ -17,7 +17,7 @@
 % \begin{comment}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.4\textwidth]{pic/callback-\detokenize\expandafter{\labno}.png} 
+  \includegraphics[width=0.8\textwidth]{pic/callback-\detokenize\expandafter{\labno}.png} 
   \caption{callback for lab \labno}
   % \label{fig:your_label} % if ref needed
 \end{figure}
@@ -51,24 +51,27 @@
 \begin{figure}[!htbp]
     \vspace{-0.5cm}
     \centering
-    \subfigure[  sub_caption1]{
-        \includegraphics[width=6cm]{.jpg}
-        %\caption{fig1}
-    }
-
-    \quad %注意空行会强制子图换行显示
-    \subfigure[sub_cap2]{
-        \includegraphics[width=6cm]{2.jpg}
-    }
+    \begin{subfigure}[b]{0.9\textwidth}
+        \includegraphics[width=\linewidth]{pic/fermat_power.png}
+        \caption{费马小定理求逆+快速幂计算点数乘}
+    \end{subfigure}
     \quad
-    \subfigure[sub_cap3]{
-        \includegraphics[width=6cm]{3.jpg}
-    }
-
+    \begin{subfigure}[b]{0.9\textwidth}
+        \includegraphics[width=\linewidth]{pic/egcd_power.png}
+        \caption{扩展欧几里得算法求逆+快速幂计算点数乘}
+    \end{subfigure}
     \quad
-    \subfigure[sub_cap4]{
-        \includegraphics[width=6cm]{4.jpg}
-    }
-    \caption{ caption}
+    \begin{subfigure}[b]{0.9\textwidth}
+        \includegraphics[width=\linewidth]{pic/egcd_window.png}
+        \caption{扩展欧几里得算法求逆+窗口法计算点数乘}
+    \end{subfigure}
+
+    \vspace{0.5cm}
+
+    \begin{subfigure}[b]{0.9\textwidth}
+        \includegraphics[width=\linewidth]{pic/egcd_naf.png}
+        \caption{扩展欧几里得算法求逆+NAF快速幂计算点数乘}
+    \end{subfigure}
+    \caption{性能分析图}
 \end{figure}
 \end{comment}
